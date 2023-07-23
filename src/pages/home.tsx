@@ -7,7 +7,6 @@ import { useState } from "react";
 import { CitySelector } from "@/components/city-selector/city-selector";
 import { TCity } from "@/constants/city-list";
 
-
 export default function Home() {
   const router = useRouter();
   const [cityModalActivity, setCityModalActivity] = useState<boolean>(false);
@@ -37,7 +36,7 @@ export default function Home() {
       <Grid item xs={3}>
         <Button variant="contained" size={"large"} onClick={handleModalOpen}>
           <SearchRounded />
-          <span>Начать поиск автомобилей</span>
+          <span>Начать поиск автомобилей!</span>
         </Button>
       </Grid>
 
